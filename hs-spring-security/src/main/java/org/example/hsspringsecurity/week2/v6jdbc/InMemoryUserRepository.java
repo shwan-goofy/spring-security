@@ -36,7 +36,7 @@ public class InMemoryUserRepository {
         // admin 사용자
         UserData admin = new UserData();
         admin.setUsername("admin");
-        admin.setPassword(passwordEncoder.encode("admin123"));
+        admin.setPassword(passwordEncoder.encode("x"));
         admin.setEnabled(true);
         admin.setAuthorities(Arrays.asList("ROLE_ADMIN", "ROLE_USER"));
         usersStore.put("admin", admin);
